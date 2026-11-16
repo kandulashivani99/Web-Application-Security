@@ -1,22 +1,18 @@
-\# Intruder Fuzzing
+# Intruder Fuzzing
 
-
-
-\## Objective
+## Objective
 
 To understand how Burp Suite Intruder can automate the testing of HTTP request parameters using a predefined list of payloads.
 
 
-
-\## Tools
+## Tools
 
 \- Burp Suite Community Edition
 
 \- OWASP Mutillidae II (local practice application)
 
 
-
-\## Procedure
+## Procedure
 
 1\. Selected a previously captured Mutillidae HTTP request.
 
@@ -31,18 +27,11 @@ To understand how Burp Suite Intruder can automate the testing of HTTP request p
 6\. Compared HTTP status codes, response lengths, and response contents.
 
 
-
-\## Observations
+## Observations
 
 The Intruder tool automated the submission of multiple test inputs. The responses were compared to identify differences in server behaviour.
 
-
-
-\*\*Actual results:\*\* Record the observed status codes, response lengths, and any meaningful response differences from the Intruder results window.
-
-
-
-\## Security Recommendations
+## Security Recommendations
 
 \- Validate user input on the server side.
 
@@ -55,8 +44,7 @@ The Intruder tool automated the submission of multiple test inputs. The response
 \- Log and monitor repeated failed login attempts.
 
 
-
-\## Conclusion
+## Conclusion
 
 The exercise demonstrated automated HTTP parameter testing with Burp Suite Intruder and the importance of analysing server responses during security testing.
 
