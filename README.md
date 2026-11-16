@@ -1,11 +1,5 @@
 # 🔐 Web Application Security Testing
 
-\<p align="center">   \<strong>ApexPlanet Cybersecurity Internship · Task 3\</strong>   \<br>   Practical Web Application Vulnerability Assessment & Security Testing \</p>
-
-\<p align="center">   \<img src="[https://img.shields.io/badge/Domain-Web%20Application%20Security-blue?style=for-the-badge](https://img.shields.io/badge/Domain-Web%20Application%20Security-blue?style=for-the-badge)" alt="Domain">   \<img src="[https://img.shields.io/badge/Platform-OWASP%20Mutillidae%20II-orange?style=for-the-badge](https://img.shields.io/badge/Platform-OWASP%20Mutillidae%20II-orange?style=for-the-badge)" alt="Platform">   \<img src="[https://img.shields.io/badge/Tools-Burp%20Suite%20%7C%20Apache-red?style=for-the-badge](https://img.shields.io/badge/Tools-Burp%20Suite%20%7C%20Apache-red?style=for-the-badge)" alt="Tools">   \<img src="[https://img.shields.io/badge/Status-Completed-success?style=for-the-badge](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)" alt="Status"> \</p>
-
----
-
 ## 📌 Project Overview
 
 This repository contains the practical implementation and documentation of **Task 3 – Web Application Security**, completed as part of the ApexPlanet Cybersecurity Internship.
@@ -260,9 +254,3 @@ No unauthorised testing against public websites or third-party systems was perfo
 | Documentation               | Markdown and GitHub                      |
 
 ---
-
-\<p align="center">
-&#x20; \<strong>Learning by Testing · Securing by Understanding\</strong>
-&#x20; \<br>
-&#x20; Web Application Security | Vulnerability Assessment | Defensive Security
-\</p>
