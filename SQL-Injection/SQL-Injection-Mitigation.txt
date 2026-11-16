@@ -1,0 +1,45 @@
+## 🛡️ SQL Injection Mitigation – Parameterized Queries
+
+### 🔹 Vulnerable Query Example
+
+The following PHP example demonstrates unsafe SQL query construction:
+
+```php
+$username = $_POST['username'];
+
+$query = "SELECT * FROM users WHERE username = '$username'";
+```
+
+When user input is directly concatenated into SQL statements, the application may become vulnerable to SQL Injection.
+
+### 🔹 Secure Query Example
+
+A parameterized query separates SQL instructions from user-supplied data.
+
+```php
+$stmt = $conn->prepare(
+    "SELECT * FROM users WHERE username = ?"
+);
+
+$stmt->bind_param("s", $username);
+$stmt->execute();
+```
+
+### 🔹 Security Benefits
+
+- User input is treated as data rather than SQL instructions.
+- Reduces SQL Injection risks.
+- Improves query handling.
+- Supports secure database access practices.
+
+### 🔹 Additional Security Measures
+
+- Validate input on the server side.
+- Use least-privilege database accounts.
+- Avoid exposing database errors to users.
+- Store passwords using secure password hashing.
+- Perform regular security assessments.
+
+### 🔹 Verification
+
+The secure query implementation demonstrates the recommended defensive approach. Actual remediation should be verified by testing the application after the code changes are applied.
