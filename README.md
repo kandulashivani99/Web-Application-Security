@@ -1,310 +1,268 @@
-\# 🔐  Web Application Security
+# 🔐 Web Application Security Testing
 
+\<p align="center">   \<strong>ApexPlanet Cybersecurity Internship · Task 3\</strong>   \<br>   Practical Web Application Vulnerability Assessment & Security Testing \</p>
 
+\<p align="center">   \<img src="[https://img.shields.io/badge/Domain-Web%20Application%20Security-blue?style=for-the-badge](https://img.shields.io/badge/Domain-Web%20Application%20Security-blue?style=for-the-badge)" alt="Domain">   \<img src="[https://img.shields.io/badge/Platform-OWASP%20Mutillidae%20II-orange?style=for-the-badge](https://img.shields.io/badge/Platform-OWASP%20Mutillidae%20II-orange?style=for-the-badge)" alt="Platform">   \<img src="[https://img.shields.io/badge/Tools-Burp%20Suite%20%7C%20Apache-red?style=for-the-badge](https://img.shields.io/badge/Tools-Burp%20Suite%20%7C%20Apache-red?style=for-the-badge)" alt="Tools">   \<img src="[https://img.shields.io/badge/Status-Completed-success?style=for-the-badge](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)" alt="Status"> \</p>
 
-\## 📌 Project Overview
+---
 
+## 📌 Project Overview
 
+This repository contains the practical implementation and documentation of **Task 3 – Web Application Security**, completed as part of the ApexPlanet Cybersecurity Internship.
 
-This repository documents the practical implementation of web application security testing as part of Task 3 of the ApexPlanet Cybersecurity Internship.
+The project focuses on understanding common web application vulnerabilities, analysing HTTP communication, performing controlled security testing, and exploring defensive security configurations.
 
+Practical exercises were conducted primarily using **OWASP Mutillidae II** in a local testing environment, supported by Burp Suite and Apache.
 
+The repository includes testing methodologies, observations, screenshots, vulnerability analysis, mitigation recommendations, and a demonstration script.
 
-The task focuses on identifying common web application vulnerabilities, analyzing HTTP requests and responses, performing controlled security testing, and implementing appropriate security measures.
+## 🎯 Objectives
 
+- Understand common web application vulnerabilities, including SQL Injection, XSS, and CSRF.
+- Intercept and analyse HTTP requests and responses using Burp Suite.
+- Explore request replay and manual testing with Burp Repeater.
+- Perform controlled input fuzzing using Burp Intruder.
+- Explore advanced Burp Suite features for application traffic analysis.
+- Understand HTTP security headers and their security benefits.
+- Configure additional security headers in Apache.
+- Document security observations, potential impacts, and mitigation techniques.
+- Maintain practical evidence and technical documentation.
 
+## 🛠️ Tools & Technologies
 
-Practical exercises are conducted using authorized, intentionally vulnerable training environments such as OWASP Mutillidae II and DVWA.
+| Tool / Technology   | Purpose                                      |
+| ------------------- | -------------------------------------------- |
+| Kali Linux          | Security testing environment                 |
+| OWASP Mutillidae II | Intentionally vulnerable web application     |
+| Burp Suite          | HTTP interception and analysis               |
+| Burp Repeater       | Manual HTTP request testing                  |
+| Burp Intruder       | Automated payload testing                    |
+| Apache              | Web server and security-header configuration |
+| MariaDB             | Database service for the local lab           |
+| Firefox             | Web application testing                      |
+| Git & GitHub        | Version control and project documentation    |
 
-
-
-\## 🎯 Objectives
-
-
-
-\- Understand and test SQL Injection vulnerabilities.
-
-\- Intercept and modify HTTP login requests using Burp Suite.
-
-\- Perform controlled input fuzzing using Burp Intruder.
-
-\- Explore advanced Burp Suite testing capabilities.
-
-\- Analyze HTTP security headers using SecurityHeaders.com.
-
-\- Configure security headers in Apache.
-
-\- Understand and test Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF).
-
-\- Document security findings and corresponding mitigation techniques.
-
-\- Demonstrate vulnerability exploitation and remediation.
-
-
-
-\## 🛠️ Tools and Technologies
-
-
-
-| Tool | Purpose |
-
-|---|---|
-
-| Kali Linux | Security testing environment |
-
-| OWASP Mutillidae II | Vulnerable web application testing |
-
-| DVWA | Web vulnerability practice |
-
-| Burp Suite | HTTP interception and testing |
-
-| Burp Intruder | Input fuzzing |
-
-| SecurityHeaders.com | HTTP header analysis |
-
-| Apache | Web server configuration |
-
-| Firefox | Web application testing |
-
-| Git \& GitHub | Version control and documentation |
-
-
-
-\## 📂 Repository Structure
-
-
+## 📂 Repository Structure
 
 ```text
-
-Task 3 - Web Application Security/
-
+Web-Application-Security/
 │
-
 ├── README.md
-
 │
-
 ├── SQL-Injection/
-
 │   ├── SQL-Injection-Report.md
-
-│   └── screenshots/
-
+│   └── SQL-Injection-Mitigation.txt
 │
-
 ├── Burp-Suite/
-
-│   ├── Request-Interception.md
-
-│   ├── Request-Modification.md
-
-│   └── screenshots/
-
+│   └── Request-Interception.md
 │
-
 ├── Intruder-Fuzzing/
-
-│   ├── Intruder-Testing.md
-
-│   └── screenshots/
-
+│   └── Intruder-Testing.md
 │
-
 ├── Advanced-Burp-Suite/
-
-│   ├── Advanced-Testing.md
-
-│   └── screenshots/
-
+│   └── Advanced-Testing.md
 │
-
 ├── Security-Headers/
-
 │   ├── Header-Analysis.md
-
-│   ├── Apache-Configuration.md
-
-│   └── screenshots/
-
+│   └── Apache-Configuration.md
 │
-
 ├── XSS-and-CSRF/
-
-│   ├── XSS-Testing.md
-
-│   ├── CSRF-Testing.md
-
-│   └── screenshots/
-
+│   └── XSS-CSRF-Testing.md
 │
-
 ├── Security-Testing-Report/
-
-│   └── Security-Testing-Report.md
-
+│   └── Final-Report.md
 │
-
-└── Demo/
-
-&#x20;   └── Demo-Script.md
-
+├── Demo/
+│   └── Demo-Script.md
+│
+└── Screenshots T3/
+    ├── SQL-Injection/
+    ├── Burp-Suite/
+    ├── Intruder/
+    ├── Advanced-Burp-Suite/
+    ├── Security-Headers/
+    └── XSS-CSRF/
 ```
 
+## 🔍 Practical Activities
 
+### 1. SQL Injection Testing
 
-\## 🔍 Practical Activities
+**Focus:** Understanding database-related vulnerabilities and insecure input handling.
 
+Activities:
 
+- Explored SQL Injection functionality in the local Mutillidae application.
+- Inspected login and user lookup interfaces.
+- Observed application responses to test inputs.
+- Studied SQL Injection risks and preventive techniques.
 
-\### 1. SQL Injection
+**Testing outcome:** SQL Injection was explored, but successful exploitation was not conclusively verified.
 
-\- Explore SQL Injection vulnerabilities.
+Documentation: `SQL-Injection/`
 
-\- Test input handling in an authorized lab.
+### 2. Burp Suite – HTTP Request Analysis
 
-\- Analyze application responses.
+**Focus:** Understanding communication between a browser and a web application.
 
-\- Document findings and preventive measures.
+Activities:
 
+- Intercepted HTTP requests using Burp Proxy.
+- Inspected captured request parameters and headers.
+- Forwarded requests to Burp Repeater.
+- Examined request and response information.
 
+**Testing outcome:** Request interception and Repeater analysis were performed. Successful request modification was not confirmed.
 
-\### 2. Burp Suite Testing
+Documentation: `Burp-Suite/`
 
-\- Intercept HTTP login requests.
+### 3. Intruder – Input Fuzzing
 
-\- Analyze request and response parameters.
+**Focus:** Exploring automated payload testing.
 
-\- Modify requests in the local testing environment.
+Activities:
 
-\- Use Repeater for manual request testing.
+- Configured payload positions.
+- Added payload lists.
+- Executed an Intruder attack.
+- Analysed response information, including status codes and response lengths.
 
+Documentation: `Intruder-Fuzzing/`
 
+### 4. Advanced Burp Suite
 
-\### 3. Intruder Fuzzing
+**Focus:** Application mapping and HTTP traffic analysis.
 
-\- Configure payload positions.
+Features explored:
 
-\- Perform controlled input fuzzing.
+- **Site Map:** Examined application structure and available endpoints.
+- **HTTP History:** Reviewed browser-generated HTTP requests.
+- **Request/Response Analysis:** Inspected application communication.
 
-\- Compare HTTP responses.
+Documentation: `Advanced-Burp-Suite/`
 
-\- Analyze unusual application behavior.
+### 5. HTTP Security Headers & Apache Configuration
 
+**Focus:** Understanding and configuring browser security-related HTTP headers.
 
+Activities:
 
-\### 4. Advanced Burp Suite
+- Explored HTTP security-header analysis.
+- Enabled Apache's `mod_headers` module.
+- Added security-header directives to the Apache configuration.
+- Validated the Apache configuration and restarted the service.
 
-\- Explore additional testing features.
+Headers configured:
 
-\- Analyze application traffic.
+| Header                 | Security Purpose                      |
+| ---------------------- | ------------------------------------- |
+| X-Content-Type-Options | Helps prevent MIME-type sniffing      |
+| X-Frame-Options        | Helps protect against clickjacking    |
+| Referrer-Policy        | Controls referrer information sharing |
+| Permissions-Policy     | Restricts selected browser features   |
 
-\- Document relevant security observations.
+**Testing outcome:** Apache configuration validation succeeded. Actual response-header verification is documented as pending.
 
+Documentation: `Security-Headers/`
 
+### 6. Cross-Site Scripting (XSS) & CSRF
 
-\### 5. HTTP Security Headers
+**Focus:** Understanding client-side script injection and request-forgery risks.
 
-\- Analyze website security headers.
+**Reflected XSS**
 
-\- Identify missing or misconfigured headers.
+- Tested the Echo Message functionality.
+- Submitted a JavaScript test payload.
+- Observed JavaScript alert execution.
 
-\- Configure appropriate headers in Apache.
+**Stored XSS**
 
-\- Verify the updated server responses.
+- Tested the Add to Your Blog functionality.
+- Submitted a JavaScript test payload.
+- Confirmed that the alert appeared again after refreshing the page.
 
+**CSRF**
 
+- Explored the Add Your Blog functionality under the CSRF section.
+- Captured the application request for inspection.
+- Detailed token analysis and exploitation were not completed.
 
-\### 6. XSS and CSRF Testing
+**Testing outcome:** Reflected and Stored XSS were successfully demonstrated. CSRF testing remained inconclusive.
 
-\- Understand reflected and stored XSS.
+Documentation: `XSS-and-CSRF/`
 
-\- Examine input validation and output encoding.
+## 🛡️ Vulnerability Mitigation
 
-\- Understand CSRF attacks and request validation.
+| Vulnerability | Recommended Security Measures                                    |
+| ------------- | ---------------------------------------------------------------- |
+| SQL Injection | Prepared statements, parameterized queries, input validation     |
+| Reflected XSS | Context-aware output encoding and input validation               |
+| Stored XSS    | Safe output rendering, sanitization, and Content Security Policy |
+| CSRF          | Anti-CSRF tokens and secure SameSite cookie attributes           |
+| Clickjacking  | Appropriate X-Frame-Options or CSP frame-ancestors policy        |
+| MIME Sniffing | X-Content-Type-Options: nosniff                                  |
 
-\- Document appropriate mitigation strategies.
+## 📸 Screenshots & Evidence
 
+Practical screenshots are organised by testing category in the `Screenshots T3/` directory.
 
+| Directory           | Evidence                                                            |
+| ------------------- | ------------------------------------------------------------------- |
+| SQL-Injection       | Mutillidae pages, login and user lookup testing                     |
+| Burp-Suite          | Intercepted requests, Repeater requests and responses, HTTP History |
+| Intruder            | Payload positions, payload lists, attack results                    |
+| Advanced-Burp-Suite | Site Map and HTTP History                                           |
+| Security-Headers    | Initial header analysis and Apache configuration                    |
+| XSS-CSRF            | Echo Message, Reflected XSS and Stored XSS demonstrations           |
 
-\## 🛡️ Security Mitigation Techniques
+Each screenshot provides supporting evidence for the corresponding practical activity.
 
+## 📄 Security Testing Report
 
+The consolidated report is available at:
 
-| Vulnerability | Recommended Mitigation |
+[`Security-Testing-Report/Final-Report.md`](Security-Testing-Report/Final-Report.md)
 
-|---|---|
+It includes:
 
-| SQL Injection | Parameterized queries and input validation |
+- Testing objectives and methodology
+- Vulnerability testing procedures
+- Observations and outcomes
+- Security impact
+- Mitigation recommendations
+- Overall testing summary
 
-| XSS | Context-aware output encoding and sanitization |
+## 🎥 Video Demonstration
 
-| CSRF | Anti-CSRF tokens and appropriate cookie settings |
+An approximately **8-minute practical demonstration** was recorded for this task.
 
-| Insecure HTTP Headers | Configure appropriate security headers |
+The demonstration covers the local testing environment, XSS demonstrations, Burp Suite features, vulnerability-testing activities, and Apache security-header configuration.
 
-| Weak Request Validation | Server-side validation and access controls |
+*The video can be linked here when it is uploaded to an accessible hosting platform.*
 
+## ⚖️ Ethical Testing Disclaimer
 
+All security testing activities were performed in a controlled, authorised educational environment using intentionally vulnerable local applications.
 
-\## 📸 Evidence and Documentation
+This project is intended solely for cybersecurity education, practical skill development, vulnerability awareness, and defensive security learning.
 
+No unauthorised testing against public websites or third-party systems was performed.
 
+## 👩‍💻 Internship Information
 
-Screenshots are maintained alongside the corresponding practical activities to demonstrate testing procedures, observations, and verification results.
+| Detail                      | Information                              |
+| --------------------------- | ---------------------------------------- |
+| Internship Program          | ApexPlanet Cybersecurity Internship      |
+| Task Number                 | Task 3                                   |
+| Task Title                  | Web Application Security                 |
+| Project Focus               | Web Application Vulnerability Assessment |
+| Primary Testing Application | OWASP Mutillidae II                      |
+| Documentation               | Markdown and GitHub                      |
 
+---
 
-
-Each activity includes:
-
-\- Testing methodology
-
-\- Observed results
-
-\- Screenshots
-
-\- Security implications
-
-\- Recommended mitigation
-
-
-
-\## 🎥 Video Demonstration
-
-
-
-An approximately 8-minute video demonstration will showcase a controlled vulnerability testing scenario, the observed security issue, and its corresponding remediation.
-
-
-
-\## ⚖️ Ethical Testing Disclaimer
-
-
-
-All practical security testing is performed only within authorized environments and intentionally vulnerable applications.
-
-
-
-This project is intended for educational purposes, cybersecurity skill development, and defensive security awareness.
-
-
-
-No unauthorized testing is performed against public websites or third-party systems.
-
-
-
-\## 👩‍💻 Internship Details
-
-
-
-\*\*Program:\*\* ApexPlanet Cybersecurity Internship  
-
-\*\*Task:\*\* Web Application Security  
-
-\*\*Focus:\*\* Web Application Vulnerability Assessment and Security Testing
-
-
-
-\---
-
-
-
+\<p align="center">
+&#x20; \<strong>Learning by Testing · Securing by Understanding\</strong>
+&#x20; \<br>
+&#x20; Web Application Security | Vulnerability Assessment | Defensive Security
+\</p>
