@@ -1,6 +1,6 @@
-\# Task 3 – Web Application Security
+# Task 3 – Web Application Security
 
-\## 8-Minute Video Demonstration Script
+## 8-Minute Video Demonstration Script
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-\### 0:00–0:45 | Introduction
+### 0:00–0:45 | Introduction
 
 
 
@@ -24,7 +24,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 0:45–1:30 | Testing Environment
+### 0:45–1:30 | Testing Environment
 
 
 
@@ -40,7 +40,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 1:30–2:30 | Reflected XSS
+### 1:30–2:30 | Reflected XSS
 
 
 
@@ -56,7 +56,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 2:30–3:30 | Stored XSS
+### 2:30–3:30 | Stored XSS
 
 
 
@@ -72,7 +72,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 3:30–4:30 | Burp Suite
+### 3:30–4:30 | Burp Suite
 
 
 
@@ -86,7 +86,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 4:30–5:15 | Intruder and Advanced Features
+### 4:30–5:15 | Intruder and Advanced Features
 
 
 
@@ -100,7 +100,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 5:15–6:00 | SQL Injection and CSRF
+### 5:15–6:00 | SQL Injection and CSRF
 
 
 
@@ -114,7 +114,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 6:00–7:15 | Apache Security Headers
+### 6:00–7:15 | Apache Security Headers
 
 
 
@@ -132,7 +132,7 @@ In this task, I explored common web application vulnerabilities using OWASP Muti
 
 
 
-\### 7:15–8:00 | Conclusion
+### 7:15–8:00 | Conclusion
 
 
 

@@ -1,14 +1,14 @@
-\# 💉 SQL Injection Testing Report
+# 💉 SQL Injection Testing Report
 
 
 
-\## 📌 Objective
+## 📌 Objective
 
 To understand SQL Injection vulnerabilities, perform controlled testing against OWASP Mutillidae II, observe application responses, and identify appropriate mitigation techniques.
 
 
 
-\## 🛠️ Testing Environment
+## 🛠️ Testing Environment
 
 
 
@@ -30,7 +30,7 @@ To understand SQL Injection vulnerabilities, perform controlled testing against 
 
 
 
-\## 🔍 Testing Methodology
+## 🔍 Testing Methodology
 
 
 
@@ -48,7 +48,7 @@ To understand SQL Injection vulnerabilities, perform controlled testing against 
 
 
 
-\## 📊 Observations
+## 📊 Observations
 
 
 
@@ -62,7 +62,7 @@ To understand SQL Injection vulnerabilities, perform controlled testing against 
 
 
 
-\## ⚠️ Security Impact
+## ⚠️ Security Impact
 
 
 
@@ -82,7 +82,7 @@ Potential impacts include:
 
 
 
-\## 🛡️ Recommended Mitigation
+## 🛡️ Recommended Mitigation
 
 
 
@@ -100,7 +100,7 @@ Potential impacts include:
 
 
 
-\## 📸 Evidence
+## 📸 Evidence
 
 
 
@@ -108,7 +108,7 @@ Screenshots are stored in the `screenshots` directory.
 
 
 
-\## 📝 Conclusion
+## 📝 Conclusion
 
 
 

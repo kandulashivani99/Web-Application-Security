@@ -1,8 +1,8 @@
-\# WEB APPLICATION SECURITY TESTING REPORT
+# WEB APPLICATION SECURITY TESTING REPORT
 
 
 
-\## Task 3 – Web Application Security
+## Task 3 – Web Application Security
 
 
 
@@ -22,7 +22,7 @@
 
 
 
-\## 1. Introduction
+## 1. Introduction
 
 
 
@@ -34,7 +34,7 @@ This task focused on understanding common web application vulnerabilities and pr
 
 
 
-\## 2. Objectives
+## 2. Objectives
 
 
 
@@ -56,7 +56,7 @@ This task focused on understanding common web application vulnerabilities and pr
 
 
 
-\## 3. Testing Environment and Tools
+## 3. Testing Environment and Tools
 
 
 
@@ -82,11 +82,11 @@ All vulnerability testing was performed against the local training application.
 
 
 
-\## 4. SQL Injection Testing
+## 4. SQL Injection Testing
 
 
 
-\### 4.1 Objective
+### 4.1 Objective
 
 
 
@@ -94,7 +94,7 @@ To understand how SQL Injection vulnerabilities can occur when an application us
 
 
 
-\### 4.2 Testing Procedure
+### 4.2 Testing Procedure
 
 
 
@@ -108,7 +108,7 @@ To understand how SQL Injection vulnerabilities can occur when an application us
 
 
 
-\### 4.3 Observation
+### 4.3 Observation
 
 
 
@@ -116,7 +116,7 @@ SQL Injection testing was explored in the local application. However, a successf
 
 
 
-\### 4.4 Mitigation
+### 4.4 Mitigation
 
 
 
@@ -132,11 +132,11 @@ SQL Injection testing was explored in the local application. However, a successf
 
 
 
-\## 5. Cross-Site Scripting (XSS) Testing
+## 5. Cross-Site Scripting (XSS) Testing
 
 
 
-\### 5.1 Reflected XSS
+### 5.1 Reflected XSS
 
 
 
@@ -172,7 +172,7 @@ SQL Injection testing was explored in the local application. However, a successf
 
 
 
-\### 5.2 Stored XSS
+### 5.2 Stored XSS
 
 
 
@@ -208,7 +208,7 @@ SQL Injection testing was explored in the local application. However, a successf
 
 
 
-\### 5.3 XSS Mitigation
+### 5.3 XSS Mitigation
 
 
 
@@ -224,11 +224,11 @@ SQL Injection testing was explored in the local application. However, a successf
 
 
 
-\## 6. Cross-Site Request Forgery (CSRF) Testing
+## 6. Cross-Site Request Forgery (CSRF) Testing
 
 
 
-\### 6.1 Objective
+### 6.1 Objective
 
 
 
@@ -236,7 +236,7 @@ To understand how Cross-Site Request Forgery can cause an authenticated user's b
 
 
 
-\### 6.2 Testing Procedure
+### 6.2 Testing Procedure
 
 
 
@@ -250,7 +250,7 @@ To understand how Cross-Site Request Forgery can cause an authenticated user's b
 
 
 
-\### 6.3 Observation
+### 6.3 Observation
 
 
 
@@ -262,7 +262,7 @@ The application request was captured for inspection. However, detailed CSRF toke
 
 
 
-\### 6.4 Mitigation
+### 6.4 Mitigation
 
 
 
@@ -278,11 +278,11 @@ The application request was captured for inspection. However, detailed CSRF toke
 
 
 
-\## 7. Burp Suite Request Interception and Repeater
+## 7. Burp Suite Request Interception and Repeater
 
 
 
-\### 7.1 Objective
+### 7.1 Objective
 
 
 
@@ -290,7 +290,7 @@ To understand how HTTP requests can be intercepted, inspected, and manually test
 
 
 
-\### 7.2 Activities Performed
+### 7.2 Activities Performed
 
 
 
@@ -306,7 +306,7 @@ To understand how HTTP requests can be intercepted, inspected, and manually test
 
 
 
-\### 7.3 Observation
+### 7.3 Observation
 
 
 
@@ -314,11 +314,11 @@ Burp Suite provided visibility into HTTP communication between the browser and t
 
 
 
-\## 8. Burp Suite Intruder Fuzzing
+## 8. Burp Suite Intruder Fuzzing
 
 
 
-\### 8.1 Objective
+### 8.1 Objective
 
 
 
@@ -326,7 +326,7 @@ To understand how automated payload testing can help identify unexpected applica
 
 
 
-\### 8.2 Activities Performed
+### 8.2 Activities Performed
 
 
 
@@ -342,7 +342,7 @@ To understand how automated payload testing can help identify unexpected applica
 
 
 
-\### 8.3 Observation
+### 8.3 Observation
 
 
 
@@ -350,7 +350,7 @@ Intruder generated multiple requests using the configured payloads. The response
 
 
 
-\## 9. Advanced Burp Suite Analysis
+## 9. Advanced Burp Suite Analysis
 
 
 
@@ -374,11 +374,11 @@ These features helped improve understanding of application mapping and HTTP traf
 
 
 
-\## 10. HTTP Security Headers and Apache Configuration
+## 10. HTTP Security Headers and Apache Configuration
 
 
 
-\### 10.1 Objective
+### 10.1 Objective
 
 
 
@@ -386,7 +386,7 @@ To configure additional HTTP security headers in Apache to improve browser-side 
 
 
 
-\### 10.2 Configuration
+### 10.2 Configuration
 
 
 
@@ -478,7 +478,7 @@ curl -I http://localhost/mutillidae/
 
 
 
-\## 11. Summary of Testing Results
+## 11. Summary of Testing Results
 
 
 
@@ -510,7 +510,7 @@ curl -I http://localhost/mutillidae/
 
 
 
-\## 12. Recommendations
+## 12. Recommendations
 
 
 
@@ -530,7 +530,7 @@ curl -I http://localhost/mutillidae/
 
 
 
-\## 13. Conclusion
+## 13. Conclusion
 
 
 
@@ -542,5 +542,5 @@ Apache security headers were configured, and the configuration was validated suc
 
 
 
-\*\*Note:\*\* All activities were conducted in a controlled local lab environment for educational purposes.
+
 

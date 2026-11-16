@@ -1,14 +1,14 @@
-\# HTTP Security Header Analysis
+# HTTP Security Header Analysis
 
 
 
-\## 1. Objective
+## 1. Objective
 
 To understand HTTP security headers and examine how they improve web application security.
 
 
 
-\## 2. Tools Used
+## 2. Tools Used
 
 \- Kali Linux
 
@@ -20,7 +20,7 @@ To understand HTTP security headers and examine how they improve web application
 
 
 
-\## 3. Headers Configured
+## 3. Headers Configured
 
 
 
@@ -38,13 +38,13 @@ To understand HTTP security headers and examine how they improve web application
 
 
 
-\## 4. Implementation
+## 4. Implementation
 
 Apache's mod\_headers module was enabled. The security headers were added to Apache's security configuration file.
 
 
 
-\## 5. Verification
+## 5. Verification
 
 The Apache configuration was validated using apache2ctl configtest and the server was restarted.
 
@@ -62,7 +62,7 @@ Record the headers actually returned by the server as verification evidence.
 
 
 
-\## 6. Conclusion
+## 6. Conclusion
 
 The activity demonstrated how HTTP security headers can be configured at the Apache web server level to add browser-side security protections.
 
